@@ -1,0 +1,23 @@
+{
+  "name": "react-typescript-mobx-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate using react, typescript and mobx",
+  "main": "index.js",
+  "author": "jaderyan <jadeelizabethryan@outlook.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "parcel-bundler": "^1.12.4",
+    "typescript": "^3.6.4"
+  }
+}
