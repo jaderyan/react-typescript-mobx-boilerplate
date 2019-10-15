@@ -1,6 +1,6 @@
 import { observable, action } from "mobx";
 
-export class UIStore {
+class UIStore {
   @observable modalOpen: boolean = false;
 
   @action
@@ -8,3 +8,5 @@ export class UIStore {
     this.modalOpen = !this.modalOpen;
   };
 }
+
+export default UIStore;

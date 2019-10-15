@@ -1,11 +1,18 @@
 import React, { FunctionComponent } from "react";
+import { Provider, observer } from "mobx-react";
 
 import "./styles/main.scss";
 
+import Container from "./components/Container/Container";
+
+import UIStore from "./stores/uiStore";
+
+const uiStore = new UIStore();
+
 const App: FunctionComponent = () => (
-  <div className="flex-container">
-    <h1>Hello world</h1>
-  </div>
+  <Provider uiStore={uiStore}>
+    <Container />
+  </Provider>
 );
 
-export default App;
+export default observer(App);
